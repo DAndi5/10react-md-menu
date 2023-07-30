@@ -1,0 +1,24 @@
+// Note: Outside of codesandbox, this can be `@use 'react-md' as *;`
+@use 'react-md/dist/everything' as *;
+
+.code {
+  @include rmd-typography(body-1);
+
+  font-family: 'Source Code Pro', Consolas, Monaco, monospace;
+}
+
+.inline {
+  color: var(--code-color);
+  white-space: pre-wrap;
+}
+
+.ticked {
+  &::before,
+  &::after {
+    content: '\`';
+  }
+}
+
+.oneline {
+  white-space: nowrap;
+}

@@ -1,0 +1,11 @@
+// Note: Outside of codesandbox, this can be `@use 'react-md' as *;`
+@use 'react-md/dist/everything' as *;
+
+.link {
+  @include rmd-button-theme(color);
+
+  &:visited,
+  &:hover {
+    @include rmd-button-theme(color);
+  }
+}
